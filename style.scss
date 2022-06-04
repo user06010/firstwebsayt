@@ -1,0 +1,105 @@
+.header{
+    background: url("img/slider-bg-1.png.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    li a{
+       color: #fff; 
+       transition: all linear .3s;
+
+       &:hover{
+           color: black;
+       } 
+    }
+}
+.content{
+    .cards{
+        .content_card{
+            transition: all .3s linear;
+            border: 0;
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.11) 0px 14px 38px 0px;
+            }
+
+
+            img{
+                width: 70px;
+                height: 65px;
+            }
+        }
+    }
+}
+.body{
+    .back-img{
+        background: url("img/3d-slider-shap.png.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .body_card{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.blog{
+    ul{
+        li{
+            color: aqua;
+            transition: all .3s linear;
+            p{
+                color: black;
+            }
+         
+        }
+    }
+}
+.email{
+    textarea{
+        resize: none;
+    }
+    .form-control{
+        border: none;
+        border-bottom: 1px solid #0D6EFD ;
+        border-radius: 0;
+        box-shadow: none;  
+        color: grey; 
+    }
+  
+    
+}
+::placeholder{
+    font-style: italic;
+    font-size: 13px;
+    color: grey;
+}
+.global{
+    height: 500px;
+    .img{
+        position: relative;
+        z-index: 1;
+        top: 50px;
+    }
+    .global_text{
+        position: absolute;
+        top: 150px;
+        border-left: 10px solid #958FFE;
+        box-shadow: 0 10px 60px grey;
+        z-index: 2;
+    }
+}
+.footer{
+    background: url("img/footer-bg.jpg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media screen and (max-width:991px) {
+    .back-img{
+        transition: all .3s linear;
+        background:none !important;
+        &:hover{
+            box-shadow: rgba(0, 0, 0, 0.11) 0px 14px 38px 0px;
+        }
+    }
+}
